@@ -1,0 +1,235 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEWORK</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100%;
+            grid-template-areas:
+                "header header header header header header"
+                "menyu menyu esas esas esas sag"
+                "footer footer footer footer footer footer"
+            ;
+            gap: 5px;
+        }
+
+        .grid1 {
+            grid-area: header;
+        }
+
+        .grid2 {
+            grid-area: menyu;
+        }
+
+        .grid3 {
+            grid-area: esas;
+        }
+
+        .grid4 {
+            grid-area: sag;
+        }
+
+        .grid5 {
+            grid-area: footer;
+        }
+
+        .grid {
+            background-color: lime;
+            text-align: center;
+            display: flex;
+            height: 400px;
+            justify-content: center;
+        }
+
+        p,
+        h1 {
+            font-size: 35px;
+        }
+
+        .img {
+            height: 250px;
+            width: 250px;
+            margin-top: 130px;
+
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .img1 {
+            background: url(1.png) center / cover;
+        }
+
+        .grid5 {
+            height: 99px;
+        }
+
+        .h1 {
+            box-shadow: 0 0 5px blue,
+                0 0 15px blue;
+            height: 50px;
+            width: 300px;
+            background-color: blue;
+        }
+
+        .h1:hover {
+            box-shadow: 0 0 5px blue,
+                0 0 15px blue,
+                0 0 25px blue,
+                0 0 35px;
+        }
+
+        hr {
+            font-size: 100px;
+        }
+
+        .img2 {
+            background: url(2.png) center / cover;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(-10px);
+            }
+
+            50% {
+                transform: translateX(10px);
+            }
+
+            75% {
+                transform: translateX(-10px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .grid1 {
+            height: 100px;
+        }
+
+        .img3 {
+            background: url(3.png) center / cover;
+        }
+        .img4{
+            background: url(4.png) center / cover;
+        }
+        .img5{
+            background: url(5.png) center / cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid grid1">
+            <h1>AMG KL</h1>
+        </div>
+        <div class="grid grid2">
+            <p>Əlinin 16 yaşı var</p>
+        </div>
+        <div class="grid grid3">
+            <h1>Ali</h1>
+            <div class="img img1"></div>
+        </div>
+        <div class="grid grid4">
+            <p>Aliko Production</p>
+        </div>
+        <div class="grid grid5">
+            <h1 class="h1">Design by Aliko</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid grid1">
+            <h1>Murad</h1>
+        </div>
+        <div class="grid grid2">
+            <p>Muradın 12 yaşı var. O 6. sinifdə oxuyur.</p>
+        </div>
+        <div class="grid grid3">
+            <h1>Murad</h1>
+            <div class="img img2"></div>
+        </div>
+        <div class="grid grid4">
+            <p>Murik</p>
+        </div>
+        <div class="grid grid5">
+            <h1 class="h1">Design by Aliko</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid grid1">
+            <h1>Gunesh</h1>
+        </div>
+        <div class="grid grid2">
+            <p>Günəşin 16 yaşı var. O çox enerjik qızdır.</p>
+        </div>
+        <div class="grid grid3">
+            <h1>Gunəş</h1>
+            <div class="img img3"></div>
+        </div>
+        <div class="grid grid4">
+            <p>Günəş kimi parıldayan</p>
+        </div>
+        <div class="grid grid5">
+            <h1 class="h1">Design by Aliko</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid grid1">
+            <h1>Kevin</h1>
+        </div>
+        <div class="grid grid2">
+            <p>Kevinin yaşca hamımızdan böyükdür. Müəllim ona qotur deyir</p>
+        </div>
+        <div class="grid grid3">
+            <h1>Kevin</h1>
+            <div class="img img4"></div>
+        </div>
+        <div class="grid grid4">
+            <p>Qotur Production Təqdim edir</p>
+        </div>
+        <div class="grid grid5">
+            <h1 class="h1">Design by Aliko</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid grid1">
+            <h1>Ləman</h1>
+        </div>
+        <div class="grid grid2">
+            <p>Ləman çox sakit qızdır və bir o qədərdə qorxuludur. Müəllim ona cin deyir.</p>
+        </div>
+        <div class="grid grid3">
+            <h1>Ləman</h1>
+            <div class="img img5"></div>
+        </div>
+        <div class="grid grid4">
+            <p>Samara Morgan</p>
+        </div>
+        <div class="grid grid5">
+            <h1 class="h1">Design by Aliko</h1>
+        </div>
+    </div>
+</body>
+
+</html>
